@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::resource('/place', PlaceController::class);
+Route::resource('/admin', AdminController::class);
